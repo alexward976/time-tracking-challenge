@@ -1,0 +1,84 @@
+@media only screen and (min-width: 600px) {
+    body {
+        height: 100vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: var(--desktop-gap);
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--desktop-gap);
+    }
+
+    header {
+        width: var(--desktop-width);
+        height: 505px;
+    }
+
+    .header--main {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        height: 65%;
+    }
+
+    .header--main>img {
+        width: 85px;
+    }
+
+    .header--name {
+        font-size: 40px;
+    }
+
+    .header--options {
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        height: 35%;
+    }
+
+    .header--options>label:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    .card {
+        width: var(--desktop-width);
+        height: 240px;
+    }
+
+    .card--body {
+        height: 80%;
+        width: 100%;
+        padding-left: 2em;
+    }
+
+    .body--header>img:hover {
+        cursor: pointer;
+    }
+
+    .body--main {
+        margin-top: 1em;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .card--body:hover {
+        background-color: var(--hover-dark-blue);
+        cursor: pointer;
+    }
+
+    .main--time {
+        font-size: 55px;
+    }
+
+    .main--prev-time {
+        margin: .4em 0;
+    }
+
+    
+}

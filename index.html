@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/mobile.css">
+  <link rel="stylesheet" href="./styles/desktop.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+
+  <header>
+    <div class="header--main">
+      <img src="./images/image-jeremy.png" alt="image of Jeremy Robson">
+      <div>
+        <span>Report for</span>
+        <h1 class="header--name">Jeremy Robson</h1>
+      </div>
+    </div>
+    
+    <div class="header--options">
+      <input type="radio" name="header-options" id="daily" value="daily">
+      <label onclick="updateTimes('daily')" for="daily">Daily</label>
+      
+      <input type="radio" name="header-options" id="weekly" value="weekly" checked>
+      <label onclick="updateTimes('weekly')" for="weekly">Weekly</label>
+      
+      <input type="radio" name="header-options" id="monthly" value="monthly">
+      <label onclick="updateTimes('monthly')" for="monthly">Monthly</label>
+    </div>
+  </header>  
+
+  <main>
+    <div class="card" id="work-card">
+      <img class="card--img" src="./images/icon-work.svg" alt="briefcase icon">
+      <div class="card--body">
+        <div class="body--header">
+          <h2>Work</h2>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis icon">
+        </div>
+        <div class="body--main" id="work-main">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="play-card">
+      <img class="card--img" src="./images/icon-play.svg" alt="controller icon">
+      <div class="card--body">
+        <div class="body--header">
+          <h2>Play</h2>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis icon">
+        </div>
+        <div class="body--main" id="play-main">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="study-card">
+      <img class="card--img" src="./images/icon-study.svg" alt="book icon">
+      <div class="card--body">
+        <div class="body--header">
+          <h2>Study</h2>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis icon">
+        </div>
+        <div class="body--main" id="study-main">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="exercise-card">
+      <img class="card--img" src="./images/icon-exercise.svg" alt="exercise icon">
+      <div class="card--body">
+        <div class="body--header">
+          <h2>Exercise</h2>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis icon">
+        </div>
+        <div class="body--main" id="exercise-main">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="social-card">
+      <img class="card--img" src="./images/icon-social.svg" alt="exercise icon">
+      <div class="card--body">
+        <div class="body--header">
+          <h2>Social</h2>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis icon">
+        </div>
+        <div class="body--main" id="social-main">
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="self-care-card">
+      <img class="card--img" src="./images/icon-self-care.svg" alt="exercise icon">
+      <div class="card--body">
+        <div class="body--header">
+          <h2>Self Care</h2>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis icon">
+        </div>
+        <div class="body--main" id="self-care-main">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./scripts/main.js"></script>
+</body>
+</html>

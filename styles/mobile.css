@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+    /* PRIMARY */
+    --blue: hsl(246, 80%, 60%);
+
+    /* (work) */
+    --light-red-1: hsl(15, 100%, 70%);
+    /* (play) */
+    --soft-blue: hsl(195, 74%, 62%);
+    /* (study) */
+    --light-red-2: hsl(348, 100%, 68%);
+    /* (exercise) */
+    --lime-green: hsl(145, 58%, 55%);
+    /* (social) */
+    --violet: hsl(264, 64%, 52%);
+    /* (self care) */
+    --soft-orange: hsl(43, 84%, 65%);
+
+    /* NEUTRAL */
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --hover-dark-blue: hsl(236, 41%, 30%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+    --pale-blue: hsl(236, 100%, 87%);
+
+    --mobile-gap: 20px;
+    --mobile-width: 90vw;
+
+    --desktop-gap: 28px;
+    --desktop-width: 250px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 0;
+    gap: var(--mobile-gap);
+}
+
+header {
+    width: var(--mobile-width);
+    position: relative;
+    border-radius: 15px;
+    background-color: var(--dark-blue);
+}
+
+.header--main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--blue);
+    padding: 2em;
+    border-radius: 15px;
+}
+
+.header--main>img {
+    width: 70px;
+    border: 3px solid white;
+    border-radius: 100%;
+}
+
+.header--main>div>span {
+    color: var(--pale-blue);
+}
+
+.header--name {
+    color: white;
+    margin: .2em auto;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.header--options {
+    color: var(--desaturated-blue);
+    text-align: center;
+    padding: 1.3em 2em;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header--options>input {
+    display: none;
+}   
+
+.header--options>label {
+    user-select: none;
+}
+
+.header--options>input:checked + label {
+    color: white;
+}
+
+.header--options>.active-option {
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--mobile-gap);
+}
+
+.card {
+    border-radius: 15px;
+    position: relative;
+    z-index: 0;
+    width: var(--mobile-width);
+    overflow-y: hidden;
+    height: 150px;
+}
+
+#work-card {
+    background-color: var(--light-red-1);
+}
+
+#play-card {
+    background-color: var(--soft-blue);
+}
+
+#study-card {
+    background-color: var(--light-red-2);
+}
+
+#exercise-card {
+    background-color: var(--lime-green);
+}
+
+#social-card {
+    background-color: var(--violet);
+}
+
+#self-care-card {
+    background-color: var(--soft-orange);
+}
+
+.card--img {
+    width: 80px;
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: -6px;
+}
+
+.card--body {
+    border-radius: 10px;
+    position: absolute;
+    z-index: 4;
+    width: var(--mobile-width);
+    height: 120px;
+    padding: 1em;
+    background-color: var(--dark-blue);
+    bottom: -5px;
+    color: white;
+}
+
+.body--header {
+    margin-top: .75em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body--header>h2 {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.body--header>img {
+    height: 5px;
+}
+
+.body--main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body--main>.main--prev-time {
+    color: var(--pale-blue);
+}
+
+.main--time { 
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+}
